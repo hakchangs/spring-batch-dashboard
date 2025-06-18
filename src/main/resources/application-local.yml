@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/mydatabase
+    username: myuser
+    password: secret
+
+logging:
+  pattern:
+    console: ${CONSOLE_LOG_PATTERN:%d{HH:mm:ss.SSS} %clr(%5p) %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n%wEx}
