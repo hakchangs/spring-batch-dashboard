@@ -1,3 +1,20 @@
+name: Simple Log
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  print-log:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello Log
+        run: echo "Hello, GitHub Actions!"
+
 #name: CI
 #on:
 #  push:
